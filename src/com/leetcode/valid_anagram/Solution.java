@@ -9,6 +9,7 @@ public class Solution {
         System.out.println(isAnagram("aacc", "ccac"));
     }
 
+    // TODO: or can be used order by alphabet
     public static boolean isAnagram(String s, String t) {
         int sLength = s.length();
         int tLength = t.length();
