@@ -11,7 +11,7 @@ public class Solution {
 
     public static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> keyToAnagram = new HashMap<>();
-        for(String str: strs) {
+        for (String str : strs) {
             String orderedWord = getOrderedWord(str);
             if (keyToAnagram.containsKey(orderedWord)) {
                 List<String> strings = keyToAnagram.get(orderedWord);
@@ -25,6 +25,7 @@ public class Solution {
         return new ArrayList<>(keyToAnagram.values());
     }
 
+    // TODO: instead of sort, can be used count of each symbol in str as a key for has map
     public static String getOrderedWord(String s) {
         char[] chars = s.toCharArray();
         Arrays.sort(chars);
