@@ -1,7 +1,4 @@
-
-![telegram-cloud-photo-size-2-5301241940219641015-y](https://user-images.githubusercontent.com/37635860/175141582-ac039f5f-e2a3-4ffd-b808-f33e19e06aba.jpg)
-
-
+![](2022-07-09 14.37.45.jpg)
 **The solution:**
 
 ```math
