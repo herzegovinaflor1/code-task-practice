@@ -13,41 +13,8 @@ public class Solution {
     }
 
     public static int longestConsecutive(int[] nums) {
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-
-        for (int i : nums) {
-            priorityQueue.add(i);
-        }
-
-        int maxCount = 0, count = 0;
-        int val = Integer.MIN_VALUE;
-        while (priorityQueue.size() > 0) {
-            int prior = priorityQueue.poll();
-            if (val == Integer.MIN_VALUE) {
-                val = prior;
-                count++;
-            } else {
-                int res = prior - val;
-                val = prior;
-                if (res == 0) {
-                    continue;
-                }
-                if (res == 1) {
-                    count++;
-                } else {
-                    if (count > maxCount) {
-                        maxCount = count;
-                    }
-                    count = 1;
-                    val = Integer.MIN_VALUE;
-                }
-            }
-        }
-
-        if (count > maxCount) {
-            maxCount = count;
-        }
-        return maxCount;
+        // TODO: implement!
+        return 0;
     }
 
 }
